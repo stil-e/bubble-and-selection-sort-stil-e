@@ -1,6 +1,5 @@
 def selection_sort(arr):
     # TODO: Implement selection sort
-    def selection_sort(arr):
     n = len(arr)
     for i in range(n):
         min_index = i
@@ -8,6 +7,9 @@ def selection_sort(arr):
             if arr[j] < arr[min_index]:
                 min_index = j
         arr[i], arr[min_index] = arr[min_index], arr[i]
+
     return arr
 
-    pass
+
+print(selection_sort([29, 10, 14, 37, 14]))
+
